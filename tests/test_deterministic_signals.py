@@ -230,7 +230,6 @@ class TestDeterministicSignals(unittest.TestCase):
             assert np.allclose(d1, eph_wf, rtol=1e-10), msg
 
 
-
 class TestDeterministicSignalsPint(TestDeterministicSignals):
     @classmethod
     def setUpClass(cls):
