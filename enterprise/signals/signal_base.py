@@ -254,6 +254,9 @@ class PTA(object):
     def pulsarmodels(self):
         return self._signalcollections
 
+    def get_MNM(self):
+        return [signalcollection.get_TNr(params) for signalcollection in self._signalcollections]
+
     def get_TNr(self, params):
         return [signalcollection.get_TNr(params) for signalcollection in self._signalcollections]
 
